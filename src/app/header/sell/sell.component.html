@@ -1,0 +1,237 @@
+<form class="needs-validation" novalidate [formGroup] = "formdata">
+<h1>Car's Main Info</h1>
+  <div class="form-row">
+    <div class="col-sm-6 col-md-4  mb-4">
+      <label for="validationCustom01">Brand</label>
+      <input type="text" formControlName="brand" class="form-control" id="validationCustom01" placeholder="Brand"  required>
+      <div class="invalid-feedback">
+        Select a Brand
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4  mb-4">
+      <label for="validationCustom02">Model</label>
+      <input type="text"  formControlName="model" class="form-control" id="validationCustom02" placeholder="Model"  required>
+      <div class="invalid-feedback">
+        Select a Model
+
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4  mb-4">
+      <label for="validationCustom04">Year</label>
+      <input type="text"  formControlName="year" class="form-control" id="validationCustom04" placeholder="Year" required>
+      <div class="invalid-feedback">
+        Select a Year
+      </div>
+
+    </div>
+
+    <div class="col-sm-6 col-md-4  mb-4">
+      <label for="validationCustom04">Trim</label>
+      <input type="text" class="form-control" id="validationCustom09" placeholder="Trim" required>
+      <div class="invalid-feedback">
+        Select a Trim
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4  mb-4">
+      <label for="validationCustom05">Transmission</label>
+      <input type="text" class="form-control" id="validationCustom06" placeholder="Transmission" required>
+      <div class="invalid-feedback">
+        Select a Transmission
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4  mb-4 ">
+      <label for="validationCustom04">Body Style</label>
+      <input type="text" class="form-control" id="validationCustom07" placeholder="Body Style" required>
+      <div class="invalid-feedback">
+        Select a Body Style
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4  mb-4">
+      <label for="validationCustom04">Engine Capacity</label>
+      <input type="text" class="form-control" id="validationCustom05" placeholder="Engine Capacity" required>
+      <div class="invalid-feedback">
+        Select a Engine Capacity
+      </div>
+
+    </div>
+
+    <div class="col-sm-6 col-md-4  mb-4">
+      <label for="validationCustom04">Factory Paint</label>
+      <input type="text" class="form-control" id="validationCustom08" placeholder="Factory Paint" required>
+      <div class="invalid-feedback">
+        Check if Factory Paint
+      </div>
+    </div>
+
+    <!-- <div class="check " >
+      <label for="validationCustom05">Factory Paint</label>
+        <input type="radio" name="choice-radio">
+        Yes
+        <input type="radio" name="choice-radio">
+        No
+    </div> -->
+
+
+  </div>
+
+
+    <!-- <div class="col-sm-6 col-md-4  mb-4">
+      <label for="validationCustomUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+        </div>
+        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Please choose a username
+        </div>
+      </div>
+    </div> -->
+  <!-- <div class="form-group"> -->
+    <!-- <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting
+      </div>
+    </div> -->
+  <!-- </div> -->
+
+
+
+
+
+
+  <h1 class="h1" >Price and Details</h1>
+  <div class="form-row">
+    <div class=" col-md-4  mb-4">
+      <label for="validationCustom05">Set Asking Price</label>
+      <input type="text" class="form-control"  formControlName="price" id="validationCustom12" placeholder="price" required>
+      <div class="invalid-feedback">
+        Enter the price in numbers
+        </div>
+    </div>
+
+    <div class="form-group col-md-12 ">
+
+    <label for="exampleFormControlTextarea1">More info about the car</label>
+    <textarea class="form-control "   formControlName="details" cols="80" rows="10"></textarea>
+      </div>
+  </div>
+
+  <h1 class="h1" >Car Images</h1>
+  <div class="form-row">
+
+
+
+
+
+
+
+
+    <!-- <div class="image-upload-wrap">
+      <input class="file-upload-input" type='file' onchange="readURL(this)" accept="image/*" />
+      <div class="drag-text">
+        <h3>Drag and drop a file or select add Image</h3>
+      </div>
+    </div>
+    <div class="file-upload-content">
+      <img class="file-upload-image" src="#" alt="your image" />
+      <div class="image-title-wrap">
+        <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+      </div>
+
+
+
+
+    </div> -->
+
+
+
+    <div class="center">
+      <!-- <div class="form-input">
+        <div class="preview">
+          <img style="width: 100px; height: 100px;"  id="file-ip-1-preview">
+        </div>
+        <label for="file-ip-1">Upload Image</label>
+        <input type="file" id="file-ip-1" accept="image/*" (change)="uploadImage($event)">
+
+
+
+      </div> -->
+      <div class="form-group">
+        <label for="exampleInputEmail1">Replace Image</label>
+        <div class="image-uploader">
+          <div class="img-box">
+            <button class="remove"></button>
+            <span #container style="width: 20px;height: 20px;">
+
+            <img  src="assets/img/5c46a9031ba2c975dfcf1b3ff4af3e4d_ccexpress.png" alt="logo">
+          </span>
+          </div>
+          <div class="img-box upload-image">
+            <input type="file" (change)="uploadImage($event)" class="input-file">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+              <g id="Icon_ionic-md-add-circle-outline" data-name="Icon ionic-md-add-circle-outline" transform="translate(-10.659 -10.659)">
+                <path id="Path_860" data-name="Path 860" d="M30.477,22.439H22.439v8.037H18.514V22.439H10.477V18.514h8.037V10.477h3.925v8.037h8.037Z" transform="translate(0.182 0.182)" fill="#453f9c"/>
+              </g>
+            </svg>
+            Upload Image
+          </div>
+        </div> 
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+  <h1 class="h1" >Contact data</h1>
+  <div class="form-row">
+
+
+    <div class="form-group row  col-12">
+      <label  class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-10">
+        <input type="text" formControlName="name" class="form-control" placeholder="Name">
+      </div>
+      <div class="invalid-feedback">
+        Please enter full name
+      </div>
+    </div>
+    <div class="form-group row  col-12">
+      <label  class="col-sm-2 col-form-label">Mobile Number</label>
+      <div class="col-sm-10">
+        <input type="number" formControlName="mobile" class="form-control"  placeholder="Mobile Number">
+      </div>
+      <div class="invalid-feedback">
+        Enter Mobile number
+      </div>
+    </div>
+    <div class="form-group row  col-12">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" formControlName="email" class="form-control" id="inputEmail3" placeholder="Email">
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+  <button class="btn btn-primary "  (click) = "submit(formdata)" type="submit">Submit form</button>
+</form>
+
+<p-toast position="bottom-center"></p-toast>
+
+
+

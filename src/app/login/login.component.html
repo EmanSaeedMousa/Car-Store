@@ -1,0 +1,27 @@
+<div class="body" >
+
+<div class="main">
+
+  <input type="checkbox" id="chk" aria-hidden="true">
+
+    <div class="Register">
+      <form [formGroup] = "registerFormdata"  >
+        <label for="chk" aria-hidden="true">Register</label>
+        <input #UserName type="text" formControlName="username"  placeholder="User Name" required>
+        <input #Email type="email" formControlName="email" placeholder="Email" required="true">
+        <input #Password type="password" formControlName="user_password" placeholder="Password" required="">
+        <button (click) = "register(registerFormdata.value)" >Register</button>
+      </form>
+    </div>
+
+    <div class="login">
+        <form [formGroup] = "loginFormdata"  >
+        <label for="chk" aria-hidden="true">Login</label>
+        <input type="text" formControlName="username" placeholder="User Name" >
+        <input  type="password"  formControlName="user_password" placeholder="Password" required="">
+      <a>	<button  (click) = "login(loginFormdata.value)" >Login</button> </a>
+      </form>
+    </div>
+</div>
+</div>
+<p-toast position="bottom-center"></p-toast>

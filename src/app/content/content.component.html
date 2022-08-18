@@ -1,0 +1,81 @@
+<img class="img" src="assets/img/automotive bg newww.jpeg"  >
+
+<div>
+  <h1> &nbsp; New</h1>
+
+  <div class="w3-row-padding w3-margin-top">
+    <div class="w3-third">
+      <div class="w3-card">
+        <img src="assets/img/6218be43bb5863c6a9095bf4_6d0e4366-e145-45a5-a63e-ede5b899e9fc.jpeg" style="width:100%">
+        <div class="w3-container">
+          <h5>Opel Mokka</h5>
+          <hr>
+
+          <h5>SUV|1200cc|130HP|2022</h5>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-card">
+        <img src="assets/img/621e3198b87a586e3f3ed956_cf28b47f-2ac0-4537-9636-753433ae4f6b.jpeg" style="width:100%">
+        <div class="w3-container">
+          <h5>Fiat Tipo</h5>
+          <hr>
+          <h5>Sedan|1600cc|110HP|2022</h5>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-card">
+        <img src="assets/img/622a6290b87a586e3f3effac_7c569423-04f0-4183-8cc7-4c3f4ee6d9f5.jpeg" style="width:100%">
+        <div class="w3-container">
+          <h5>Suzuki Swift</h5>
+          <hr>
+
+          <h5>Hatchback|1200cc|82HP|2022</h5>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+</div>
+
+<div  >
+
+
+<p-carousel [value]="products" styleClass="custom-carousel" [numVisible]="4" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+    <ng-template pTemplate="header">
+        <h1> &nbsp;&nbsp;Brandes</h1>
+    </ng-template>
+
+
+    <ng-template let-product pTemplate="item">
+        <div class="product-item">
+            <div class="product-item-content">
+                <div class="mb-3">
+                    <img src="assets/img/{{product.image}}" (click)="openProduct(product.recId)" [alt]="product.name" class="product-image" />
+                </div>
+                <div>
+                     <h4 class="mb-1">{{product.name}}</h4>
+
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>
+
+</div>
+
+<!-- <div class="cardd">
+  <h1> &nbsp;&nbsp;Best seller</h1>
+  <p-chart type="bar" [data]="basicData" [options]="horizontalOptions"></p-chart>
+</div> -->
+

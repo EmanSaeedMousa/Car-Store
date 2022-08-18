@@ -1,0 +1,132 @@
+// .row{
+//   margin-top: 6%;
+// }
+
+
+// img{
+
+// }
+form{
+  // margin-left: 145px;
+  // margin-top: 145px;
+margin: 170px 0 0 145px ;
+}
+.form-row{
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: .4rem;
+  box-shadow: 0 0 4px 0 rgba(173,181,189,.47058823529411764);
+  border: .1px solid rgba(10,38,58,.10980392156862745);
+}
+button{
+  margin-top: 20px;
+}
+.check{
+  padding: 4px 23px;
+  border-radius: .2rem;
+  border: 1px solid #adb5bd;
+  font-size: 1.2rem;
+  box-shadow: none;
+  transition: border .2s,box-shadow .2s;
+  background-color: #fff;
+  height: 40px;
+
+
+}
+.h1{
+  margin-top: 1.5rem;
+}
+
+
+
+.h1{
+  margin-top: 1.5rem;
+}
+
+
+
+.center {
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+.form-input {
+  width:350px;
+  padding:20px;
+  background:#fff;
+  box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
+              3px 3px 7px rgba(94, 104, 121, 0.377);
+}
+.form-input input {
+  display:none;
+
+}
+.form-input label {
+  display:block;
+  width:45%;
+  height:45px;
+  margin-left: 25%;
+  line-height:50px;
+  text-align:center;
+  background:#1172c2;
+
+  color:#fff;
+  font-size:15px;
+  font-family:"Open Sans",sans-serif;
+  text-transform:Uppercase;
+  font-weight:600;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.form-input img {
+  width:100%;
+  display:none;
+
+  margin-bottom:30px;
+}
+
+
+:host {
+ ::ng-deep .p-button{
+    width: 10.36rem !important;
+    background: #955ac2;
+    border: 1px solid #955ac2;
+
+ }
+ ::ng-deep .p-button :hover{
+  background: #955ac2;
+  border: 1px solid #955ac2;
+ }
+}
+@media screen and (max-width: 960px) {
+  .p-button {
+      margin-bottom: .5rem;
+      // width: 10.36rem;
+      // padding: 0.5rem 0;
+      // margin-left: 100%;
+
+            &:not(.p-button-icon-only) {
+          display: flex;
+          width: 100%;
+          align-content: center;
+      }
+    }
+
+  .p-buttonset {
+      .p-button {
+          margin-bottom: 0;
+      }
+  }
+}
+
+img{
+  margin-top: 85px;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}

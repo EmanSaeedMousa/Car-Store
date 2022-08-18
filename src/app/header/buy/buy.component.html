@@ -1,0 +1,39 @@
+
+
+<div  class="row">
+  <form class="needs-validation" novalidate>
+
+    <div class="form-row">
+      <div class=" col-md-12  mb-4">
+        <label for="validationCustom01">Brand?</label>
+        <input type="text" class="form-control" id="validationCustom01" placeholder="Brand"  required>
+        <div class="invalid-feedback">
+          Select a Brand
+        </div>
+      </div>
+    <div class="center">
+    <p-button  icon="pi pi-search" [loading]="loading[2]" (onClick)="load(2)"></p-button>
+    </div>
+    </div>
+    <div class="form-row">
+      <div class=" col-md-12  mb-4">
+        <label for="validationCustom01">at the price?</label>
+        <input type="text" class="form-control" id="validationCustom01" placeholder="price"   required>
+        <div class="invalid-feedback">
+          Select a price
+        </div>
+      </div>
+      <div class="center">
+      <p-button   icon="pi pi-search" [loading]="loading[2]" (onClick)="load(2)"></p-button>
+    </div>
+    </div>
+
+ </form>
+
+  <div class="col-lg-6 col-md-6 col-sm-12">
+  <img src="assets/img/1555932860.png">
+  </div>
+
+
+
+</div>
